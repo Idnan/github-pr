@@ -13,7 +13,7 @@ if [[ -z $ACCESS_TOKEN ]]; then
   echo "Oops! Seems to be a problem with your Github API token. Use below link to generate token"
   echo "  https://github.com/settings/tokens/new"
   echo "and then run this command to save token"
-  echo "  git config auth.token YOUR_ACCESS_TOKEN"
+  echo "  git config --global auth.token YOUR_ACCESS_TOKEN"
   exit 1
 fi
 
