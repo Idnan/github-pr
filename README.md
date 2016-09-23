@@ -18,7 +18,7 @@ $ cd github-pr
 $ sudo make install
 ```
 
-After installation you need to setup access token
+After installation you need to setup access token on [`github`](https://github.com)
 - Go to the [`Settings > Personal Access Tokens`](https://github.com/settings/tokens) of your github profile
 - Click `Generate New Token` button. Give the token description and select the scope called `public_repo` under `repo` and click `Generate Token`.
 - You will be presented with the generated token. Copy the token.
