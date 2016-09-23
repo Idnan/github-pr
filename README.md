@@ -35,35 +35,34 @@ Below is the description of all the accepted options
 
 ## Examples
 
-- Pull request from current branch to `master` branch with specified title
+> Pull request from current branch to `master` branch with specified title
 
-```shel
+```shell
 $ ghpr -t "Adds the unit tests"
 ```
 
-- Pull request from `tests` branch to `develop`
+> Pull request from `tests` branch to `develop`
 
-```shel
+```shell
 $ ghpr -t "Adds the unit tests" -h develop -b tests
 ```
 
-- Specifying the description
+> Specifying the description
 
-```shel
+```shell
 $ ghpr -t "Adds the unit tests" -h develop -b tests -d "Added unit tests for the ACL module"
 ```
 
-- Copy the pull request URL to clipboard after opening
+> Copy the pull request URL to clipboard after opening
+> Will open pull request from current branch to master with the given title and copy the URL to clipboard
 
-```shel
-# Will open pull request from current branch to master with the given title and copy the URL to clipboard
-
+```shell
 $ ghpr -t "Adds the unit tests" -c
 ```
 
-- Dry run - Below command will not create a pull request but print the meta
+> Dry run - Below command will not create a pull request but print the meta
 
-```shel
+```shell
 $ ghpr -t "Adds the unit tests" -h develop -b tests
 ```
 
