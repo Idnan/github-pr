@@ -33,6 +33,40 @@ Below is the description of all the accepted options
 - `-c` Copy the PR URL to the clipboard
 - `-f` Fake run, doesn't make the request but prints the URL and body
 
+## Examples
+
+- Pull request from current branch to `master` branch with specified title
+
+```shel
+$ ghpr -t "Adds the unit tests"
+```
+
+- Pull request from `tests` branch to `develop`
+
+```shel
+$ ghpr -t "Adds the unit tests" -h develop -b tests
+```
+
+- Specifying the description
+
+```shel
+$ ghpr -t "Adds the unit tests" -h develop -b tests -d "Added unit tests for the ACL module"
+```
+
+- Copy the pull request URL to clipboard after opening
+
+```shel
+# Will open pull request from current branch to master with the given title and copy the URL to clipboard
+
+$ ghpr -t "Adds the unit tests" -c
+```
+
+- Dry run - Below command will not create a pull request but print the meta
+
+```shel
+$ ghpr -t "Adds the unit tests" -h develop -b tests
+```
+
 ## Note
 
 You need to have setup the access token on [`github`](https://github.com)
